@@ -2,13 +2,13 @@ const STATIC_CACHE = "static-cache-v1";
 const RUNTIME_CACHE = "runtime-cache";
 
 const FILES_TO_CACHE = [
-    "./index.html",
-    "./index.js",
-    "./styles.css",
-    "./indexedDB.js",
-    "./manifest.json",
-    "./icons/icon-192x192.png",
-    "./icons/icon-512x512.png"
+    "/index.html",
+    "/index.js",
+    "/styles.css",
+    "/indexedDB.js",
+    "/manifest.json",
+    "/icons/icon-192x192.png",
+    "/icons/icon-512x512.png"
 ];
 
 self.addEventListener("install", event => {
@@ -69,7 +69,7 @@ self.addEventListener("fetch", event => {
     // use cache first for all other requests for performance
     event.respondWith(
         caches.match(event.request).then(cachedResponse => {
-            if (cachesResponse) {
+            if (cachedResponse) {
                 return cachedResponse;
             }
             // request is not in cache. make network request and cache the response
