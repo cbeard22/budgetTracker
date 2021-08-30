@@ -36,11 +36,14 @@ To utilize this page, simply click in the "Name of transaction" box to enter the
 ![Screenshot of finished project.](./Develop/img/budgetTracker.png)
 
 ## Credits
-  - [Chris Beard:](https://github.com/cbeard22)
+  - [Chris Beard](https://github.com/cbeard22)
 
 - For this project I utilized:
 - Javascript
 - Mongoose
+- MongoDB
+- Express
+- Node.js
 
 
 - Tutorials Followed:
