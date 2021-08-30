@@ -46,6 +46,17 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="indexedDB.js"></script>
   <script src="index.js"></script>
+  <script type="text/javascript">
+    (function serviceWorker() {
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./service-worker.js", {scope: "/"})
+            .then(() => console.log("Service Worker registered successfully."))
+            .catch(error => console.log("Service worker failed!", error))
+        })
+      }
+    });
+  </script>
  
 </body>
 </html>
