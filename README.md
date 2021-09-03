@@ -33,7 +33,7 @@ Budget Tracker is a web application used to track your expenses over time to com
 
 To utilize this page, simply click in the "Name of transaction" box to enter the title. Next, enter the amount in the "Transaction amount" box. Then click the "add or subtract fund button" and watch the site work its magic. 
 
-![Screenshot of finished project.](./Develop/img/budgetTracker.png)
+![Screenshot of finished project.](./img/budgetTracker.png)
 
 ## Credits
   - [Chris Beard](https://github.com/cbeard22)
